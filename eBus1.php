@@ -85,9 +85,7 @@ si a:hover:not(.active) {
         <div class="form">
             <form name="intCalc" method="post" action="eBus2.php">
                 <br>
-                <br>
-                <br>
-                <br>
+            
                
                 <center>
                     
@@ -134,19 +132,19 @@ si a:hover:not(.active) {
                         </tr>
                         <tr>
                             <td>Sub Total</td>
-                            <td><input type="text" id="txtSubTot" name="txtSub" readonly /></td>
+                            <td><input type="text" id="txtSubTot" name="txtSub" required onkeydown="return false;"/></td>
                         </tr>
                         <tr>
                             <td>Discount @ 10%</td>
-                            <td><input type="text" id="txtDisc" name="txtDisc" readonly /></td>
+                            <td><input type="text" id="txtDisc" name="txtDisc" required onkeydown="return false;"/></td>
                         </tr>
                         <tr>
                             <td>+VAT @ 20%</td>
-                            <td><input type="text" id="txtVat" name="txtVat" readonly /></td>
+                            <td><input type="text" id="txtVat" name="txtVat" required onkeydown="return false;"/></td>
                         </tr>
                         <tr>
                             <td>Total</td>
-                            <td><input type="text" id="txtTotal" name="txtTotal" value="" readonly /></td>
+                            <td><input type="text" id="txtTotal" name="txtTotal" value="" required onkeydown="return false;"/></td>
                         </tr>
                     </table>
                 </center>

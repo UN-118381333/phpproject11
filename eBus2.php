@@ -16,6 +16,41 @@ $_SESSION['txtTotal']= $totalValue2 ;
 <html>
 <head>
     <style>
+        .tr{
+            float: center;
+        }
+         sl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+si {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+si a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+si a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+ 
+}
                     body {
         background-image: url("images/da-img-1.jpg");
        
@@ -30,10 +65,27 @@ $_SESSION['txtTotal']= $totalValue2 ;
     <title> eBusiness 2 </title>
 </head>
 <body>
+    <sl>
+  <si><a class="active" href="Menu.html">Home</a></si>
+  <si><a href="EbUS1.PHP">< Previous</a></si>
+  <si><a href="CV.html">CV</a></si>
+    </sl>
+  
+  
     <div class ="form">
-        <form name ="Details" method ="post" action= "eBUS3.php">
+        <form name ="Details" method ="post" action= "eBus3.php">
             <center>
-                <table cellspacing ="10">
+                <table cellspacing ="20">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
                     <tr>
                         <td><b></b></td>
                         <td><b> Enter in your details below</b></td>
@@ -45,13 +97,13 @@ $_SESSION['txtTotal']= $totalValue2 ;
                     </tr>
        
                      <tr>
-                         <td> Phone Number </td>
-                         <td><input type="text" id="txtNum" name="txtNum" value="" required/> </td>
+                         <td> Email </td>
+                         <td><input type="Email" id="txtNum" name="txtNum" value="" required/> </td>
                     </tr>
        
                     <tr>
-                         <td> Password </td>
-                         <td><input type="text" id="txtPassword" name="txtPassword" value="" required autocomplete="off"/> </td>
+                         <td> Pin </td>
+                         <td><input type="Password" maxlength="4" id="txtPassword" name="txtPassword" value="" required autocomplete="off"/> </td>
                     </tr>
        
                     <tr>
@@ -59,14 +111,15 @@ $_SESSION['txtTotal']= $totalValue2 ;
                     </tr>
        
                 </table>
-         </center>
+        
        
        
-            <center>  
+             
         <input type="submit" name ="btnContinue" id="btnContinue" onclick="" value="Continue" />
        
             </center>
+    </form>
+
     </div>
-</form>
     </body>
     </html>
