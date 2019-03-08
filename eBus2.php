@@ -1,13 +1,15 @@
 <?php
 session_start();
 $fullNameValue = "" ;
-$totalValue2="" ;
+$totalValue2= "" ;
+$Email= "" ;
 /*
  * Create a session variable for the mobile number
  */
 $totalValue = $_POST['txtTotal'];
 $_SESSION['txtName'] = $fullNameValue;
-$_SESSION['txtTotal']= $totalValue2 ;
+$_SESSION['txtTotal'] = $totalValue2;
+$_SESSION['txtEmail'] = $Email;
 /**
  * Allocate the mobile number session variable to a text
  */
@@ -16,9 +18,22 @@ $_SESSION['txtTotal']= $totalValue2 ;
 <html>
 <head>
     <style>
-        .tr{
-            float: center;
+        table {
+            font-size: 20px;
         }
+       .button {
+  background-color: white;
+  border: 8px #33ffe0;
+  color: #33ffe0;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
          sl {
   list-style-type: none;
   margin: 0;
@@ -67,7 +82,7 @@ si a:hover:not(.active) {
 <body>
     <sl>
   <si><a class="active" href="Menu.html">Home</a></si>
-  <si><a href="EbUS1.PHP">< Previous</a></si>
+  <si><a href="eBus1.php">< Previous</a></si>
   <si><a href="CV.html">CV</a></si>
     </sl>
   
@@ -75,7 +90,7 @@ si a:hover:not(.active) {
     <div class ="form">
         <form name ="Details" method ="post" action= "eBus3.php">
             <center>
-                <table cellspacing ="20">
+                <table cellspacing ="25">
                     <br>
                     <br>
                     <br>
@@ -86,7 +101,8 @@ si a:hover:not(.active) {
                     <br>
                     <br>
                     
-                    <tr>
+                    
+                     <tr>
                         <td><b></b></td>
                         <td><b> Enter in your details below</b></td>
                     </tr>
@@ -98,16 +114,16 @@ si a:hover:not(.active) {
        
                      <tr>
                          <td> Email </td>
-                         <td><input type="Email" id="txtNum" name="txtNum" value="" required/> </td>
+                         <td><input type="Email" id="txtNum" name="txtEmail" value="" required/> </td>
                     </tr>
        
                     <tr>
                          <td> Pin </td>
-                         <td><input type="Password" maxlength="4" id="txtPassword" name="txtPassword" value="" required autocomplete="off"/> </td>
+                         <td><input type="Password" maxlength="4" id="txtPassword" name="txtPassword" value="" required autocomplete="off" class="body"/> </td>
                     </tr>
        
                     <tr>
-                         <td><input type="Hidden" id="txtTotal" name="txtTotal" value="<?php echo $totalValue;?>" /> </td>
+                         <td><input type="Hidden" id="txtTotal" name="txtTotal" value="<?php echo $totalValue;?>" class="body"/> </td>
                     </tr>
        
                 </table>
@@ -115,7 +131,7 @@ si a:hover:not(.active) {
        
        
              
-        <input type="submit" name ="btnContinue" id="btnContinue" onclick="" value="Continue" />
+        <input type="submit" name ="btnContinue" id="btnContinue" onclick="" value="Continue" class="button"/>
        
             </center>
     </form>
