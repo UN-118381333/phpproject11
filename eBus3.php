@@ -61,7 +61,7 @@
         <br>
         <br>
         <br>
-        <a href="Index.php" class="button">Return to Menu</a>
+        <a href="index.php" class="button">Return to Menu</a>
         
     </body>
     </center>

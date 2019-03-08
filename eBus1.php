@@ -78,7 +78,7 @@ si a:hover:not(.active) {
         <sl>
   <si><a class="active" href="Menu.html">Home</a></si>
   <si><a href="ConsultingServices.html">< Previous</a></si>
-  <si><a href="CV.html">CV</a></si>
+  <si><a href="cv.html">CV</a></si>
 
 </sl>
     
