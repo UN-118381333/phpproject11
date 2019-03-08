@@ -8,6 +8,7 @@ $_SESSION['txtTotal'] = $totalValue;
 <html lang="en" xmins="https.//www.w3.org/1999/xhtml"
     <head>
         <style>
+           
              sl {
   list-style-type: none;
   margin: 0;
@@ -150,7 +151,7 @@ si a:hover:not(.active) {
                 </center>
                 <br />
                 <center>
-                    
+                    <!-- assigning values and creating validations -->
                     <input type="button" name="btnCalc" id="btnCalc" onclick="calcSub()" value="Calculate Amount" class="button" />
                     <input type="button" name="btnClear" id="btnClear" onclick="AmountClear()" value="Clear Choice" class="button"/>
                     <input type="submit" name="btnAdd" id="btnAdd" onclick="" value="Add to Shopping Cart" class="button" />

@@ -18,6 +18,7 @@ $_SESSION['txtEmail'] = $Email;
 <html>
 <head>
     <style>
+    /* styling buttons background and navbars */
         table {
             font-size: 20px;
         }
@@ -106,7 +107,7 @@ si a:hover:not(.active) {
                         <td><b></b></td>
                         <td><b> Enter in your details below</b></td>
                     </tr>
-       
+       <!-- assigning values and creating validations -->
                     <tr>
                          <td> Name </td>
                          <td><input type="text" id="txtName" name="txtName" value="" required /> </td>
